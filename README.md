@@ -10,6 +10,12 @@ npm ci
 npm run start
 ```
 
+動作確認済バージョン
+```
+node: v10.19.0
+npm: 6.14.4
+```
+
 ## 参考サイトmemo
-https://p5js.org/
-https://ics.media/entry/210129/
+ * https://p5js.org/
+ * https://ics.media/entry/210129/
