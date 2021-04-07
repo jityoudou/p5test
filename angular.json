@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "p5test"
+  "defaultProject": "p5test",
+  "cli": {
+    "analytics": "cda863d6-d56c-4e36-9255-9b694acde440"
+  }
 }
