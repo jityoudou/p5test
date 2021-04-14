@@ -9,6 +9,16 @@ import * as p5 from 'p5';
   styleUrls: ['./main-canvas.component.css']
 })
 export class MainCanvasComponent implements OnInit {
+
+  maxr = 200;
+
+  onclickplus() {
+    this.maxr += 10;
+  }
+  onclickminus() {
+    this.maxr -= 10;
+  }
+
   public sketch :p5 | null;
   public xList = [20,132,43,55,670];
   public p5f = (p:p5) =>{
@@ -23,13 +33,14 @@ export class MainCanvasComponent implements OnInit {
     let prepos: number[] = [-100, 350];
     let posr = 0;
     let postheta = 0;
+    
 
     p.draw = () => {
       //p.background(100);
       prepos = [posx, posy];
 
       posr += p.random(-20, 20);
-      while (Math.abs(posr) > 200) {
+      while (Math.abs(posr) > this.maxr) {
         posr += p.random(-20, 20);
       }
       console.log(posr);
@@ -60,6 +71,9 @@ export class MainCanvasComponent implements OnInit {
 
       p.line(prepos[0], prepos[1], posx, posy);
       p.circle(posx, posy, 10);
+
+      p.fill(255, 5);
+      p.circle(450, 350, this.maxr*2+10);
     }
   }
   constructor() {
