@@ -3,6 +3,7 @@
 ## これは何？
 Make Faire Tokyo 2021 に向けたP5jsなどなどの練習用環境  
 p5test>src>app>main-canvas>main-canvas.component.tsを主に編集
+push test
 
 ## 始め方
 node, npmをインストールした状態で↓を実行、 その後`localohst:4200`へアクセス
